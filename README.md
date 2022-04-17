@@ -1,5 +1,2 @@
-# Resume
-Resume Viktar Hubarevich
-
-## You can see the result here
+## You can view a resume here.
 [My resume](https://viktorgubarevich.github.io/Resume/)
