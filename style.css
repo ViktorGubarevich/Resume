@@ -23,7 +23,7 @@ a:active {
 }
 
 a:visited {
-  color: grey;
+  color: rgb(255, 255, 255);
 }
 
 .container {
@@ -34,28 +34,38 @@ a:visited {
 
 .avatar {
   width: 250px;
-  border-radius: 30px;
+  border-radius: 0 30px 30px 0;
   box-shadow: 4px 4px 14px rgba(0,0,0, .25);
 }
 
 .info {
   display: flex;
   margin-bottom: 20px;
+  background: #565656;
+  border-radius: 30px;
 }
 
 .info-text {
+  width: 100%;
   margin-left: 40px;
 }
 
-.info-text p {
-  font-style: italic;
+.info-text p, a {
   font-weight: bold;
-  color: #86898f;
+  color: #ffffff;
   margin: 0;
 }
 
-.info-text h4 {
+.info-text h1 {
+  padding: 10px;
+}
+
+.info-text h1, h4 {
+  width: 75%;
+  background: #ff8800;
   margin-bottom: 10px;
+  padding-left: 30px;
+  border-radius: 0 30px 0 0;
 }
 
 @media (max-width: 550px) {
@@ -65,48 +75,83 @@ a:visited {
   }
 }
 
-.card {
-  border-radius: 20px;
+.about-me h2 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.about-me .section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.about-me .section .block {
+  width: 30%;
+  padding: 0 20px;  
+}
+
+.about-me .section .block p {
+  text-align: justify;
+  color: #86898f;
+}
+
+.about-me .section .block p a{
+  color: #86898f;
+  font-weight: normal;
+}
+
+.about-me .section .block p a:visited {
+  color: #86898f;
+  font-weight: normal;
+}
+
+.experience {
   padding: 15px 20px;
   margin-bottom: 20px;
 }
 
-.card h2 {
+.experience h2 {
+  text-align: center;
+}
+
+.experience table {
+  background-color: #ff8800;
+  padding: 10px;
   margin-bottom: 10px;
+  border-radius: 20px;
 }
 
-.bg-white {
-  background: #fefefe;
+.table {
+  width: 100%;
 }
 
-.bg-orange {
-  background: #ff8800;
+.table td {
+  width: 30%;
+  padding: 10px;
+  text-align: justify;
 }
 
-.btn {
-  display: flex;
+.table td:nth-child(2),
+.table td:nth-child(3)  {
+  color: #565656;
+}
+
+.education h2 {
+  text-align: center;
+}
+
+.list {  
+  display: table;
   margin: auto;
-  background: #111;
-  padding: 15px 40px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-family: inherit;
-}
-
-.btn:hover {
-  background: #ff8800;
-  color: #000;
-}
-
-.list {
   padding: 0 20px;
 }
 
 .list li {
   color: #86898f;
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 .link-list {
@@ -118,19 +163,6 @@ a:visited {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
-}
-
-.table {
-  width: 100%;
-}
-
-.table td {
-  padding-bottom: 10px;
-}
-
-.table td:nth-child(2),
-.table td:nth-child(3)  {
-  color: #565656;
 }
 
 .form h2 {
@@ -180,4 +212,21 @@ a:visited {
   padding: 15px 0 10px;
   outline: none;
   font-family: inherit;
+}
+
+.btn {
+  display: flex;
+  margin: auto;
+  background: #111;
+  padding: 15px 40px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background: #ff8800;
+  color: #000;
 }
