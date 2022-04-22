@@ -12,6 +12,7 @@
 <body>
 
   <div class="container">
+
     <div class="info">
       <img src="imgs/My_Photo.JPG" alt="My_Photo" class="avatar">
   
@@ -33,7 +34,7 @@
 
         <h4>Position:</h4>
         <p>Front-end Developer</p>
-      </div>    
+      </div>
     </div>
     
     <div class="about-me">
@@ -47,14 +48,14 @@
             <br> I have communication skills and the
             ability to present complex
             information in an easy-to-understand format.</p>
-        </div> 
+        </div>
         
         <div class="block">
           <h4>Skills</h4>
           <ol class="list">
             <li>HTML 5</li>
             <li>CSS, SASS</li>
-            <li>JavaScript</li>        
+            <li>JavaScript</li>
             <li>Webpack</li>
             <li>GIT, Azure</li>
             <li>React</li>
@@ -67,10 +68,9 @@
           <p>Alexei Khovbok</p>
           <p>His contact on LinkedIn: 
             <a href="https://linkedin.com/in/aleksey-khovbok-04143095" target="_blank">AlekseyKhovbok</a>
-          </p>  
-        </div> 
+          </p>
+        </div>
       </div>      
-      
     </div>
   
     <div class="experience">
@@ -79,9 +79,14 @@
       <table class="table">
         <tbody>
           <tr>
-            <td>Research laboratory <br> "ТТОRЕPS"</td>
-            <td>Engineer</td>
-            <td>06.2013 - 07.2014</td>
+            <td>Itransition</td>
+            <td>Front-end Developer</td>
+            <td>06.2021 - Present</td>
+          </tr>
+          <tr>
+            <td>Limited Liability Company "Eva-Altai"</td>
+            <td>Sales Manager</td>
+            <td>03.2021 - 05.2021</td>
           </tr>
           <tr>
             <td>Industrial Safety Supervision
@@ -91,14 +96,9 @@
             <td>08.2014 - 03.2021</td>
           </tr>
           <tr>
-            <td>Limited Liability Company "Eva-Altai"</td>
-            <td>Sales Manager</td>
-            <td>03.2021 - 05.2021</td>
-          </tr>
-          <tr>
-            <td>Itransition</td>
-            <td>Front-end Developer</td>
-            <td>06.2021 - Present</td>
+            <td>Research laboratory <br> "ТТОRЕPS"</td>
+            <td>Engineer</td>
+            <td>06.2013 - 07.2014</td>
           </tr>
         </tbody>
       </table>
@@ -109,23 +109,10 @@
 
       <ul class="link-list">
         <li>
-          <p>09.2020-04.2021 – Coding School TeachMeSkills Course: Front-end Developer</p> 
-        </li>
-        <li>
-          <p>2019-2020 – Streamline (Pre-Intermediate Level (CEFR A2+)), English</p>
-        </li>
-        <li>
-          <p>2018-2019 – Streamline (Elementary Level (CEFR A2)), English</p>
-        </li>
-        <li>
           <p>2017-2019 – University of Civil Protection of the
             Ministry of Emergency Situations Republic of Belarus
             (Industrial safety engineer), Retraining Diploma at the
             Higher Education level</p>
-        </li>
-        <li>
-          <p>11.2016 – Republican Institute of Higher School
-            Leaders School Training Course</p>
         </li>
         <li>
           <p>2014-2016 – Belarusian State University of Transport
@@ -142,30 +129,59 @@
         </li>
       </ul>
     </div>
-  
-    <form action="/" class="form">
-      <h2>Contact me</h2>
 
-      <div class="form-row">
-        <div class="form-group">
-          <label for="text">Name:</label>
-          <input type="text" id="text" placeholder="Enter a name">
-        </div>       
-    
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Enter a email">
+    <div class="education">
+      <h2>Courses</h2>
+
+      <ul class="link-list">
+        <li>
+          <p>09.2020-04.2021 – Coding School TeachMeSkills Course: Front-end Developer</p> 
+        </li>
+        <li>
+          <p>2019-2020 – Streamline (Pre-Intermediate Level (CEFR A2+)), English</p>
+        </li>
+        <li>
+          <p>2018-2019 – Streamline (Elementary Level (CEFR A2)), English</p>
+        </li>
+        <li>
+          <p>11.2016 – Republican Institute of Higher School
+            Leaders School Training Course</p>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="contact">
+      <h2>Contact me</h2>
+      <form>
+
+        <input type="hidden" name="project_name" value="Resume Viktar Hubarevich">
+        <input type="hidden" name="admin_email" value="gubarew.v@gmail.com">
+        <input type="hidden" name="form_subject" value="Footer Form">
+
+        <div class="form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="text">Name:</label>
+              <input name="Name" type="text" id="text" placeholder="Enter a name">
+            </div>     
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input name="e-mail" type="email" id="email" placeholder="Enter a email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter a message..."></textarea>
+          </div>
         </div>
-      </div>
-  
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" cols="30" rows="10" placeholder="Enter a message..."></textarea>
-      </div>
-  
-      <button type="submit" class="btn">Send!</button>
-    </form>
+        <button type="submit" value="send" class="btn">Send</button>        
+      </form>      
+    </div>
+
   </div>
-  
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
+
 </body>
 </html>

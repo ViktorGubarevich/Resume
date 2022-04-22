@@ -89,7 +89,7 @@ a:visited {
 
 .about-me .section .block {
   width: 30%;
-  padding: 0 20px;  
+  padding: 0 20px;
 }
 
 .about-me .section .block p {
@@ -166,8 +166,18 @@ a:visited {
   padding-bottom: 5px;
 }
 
-.form h2 {
+.contact h2 {
   text-align: center;
+  margin-bottom: 10px;
+  border-radius: 0 30px 0 0;
+}
+
+.form {
+  width: 100%;
+  background: #565656;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .form-row {
@@ -198,8 +208,8 @@ a:visited {
 
 .form-group label {
   display: block;
-  font-size: 14px;
-  color: grey;
+  font-size: 16px;
+  color: #ffffff;
 }
 
 .form-group input,
@@ -213,18 +223,24 @@ a:visited {
   padding: 15px 0 10px;
   outline: none;
   font-family: inherit;
+  font-size: 12px;
 }
 
 .btn {
   display: flex;
   margin: auto;
-  background: #111;
   padding: 15px 40px;
   color: #fff;
+  font-size: 16px;
+  background: #111;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   font-family: inherit;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .btn:hover {
